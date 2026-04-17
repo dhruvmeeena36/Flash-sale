@@ -1,0 +1,22 @@
+{
+  "name": "flipkart-flash-sale",
+  "version": "1.0.0",
+  "description": "Flash sale system handling 10,000+ concurrent requests without overselling",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "load-test": "node loadTest.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "mongoose": "^8.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "autocannon": "^7.12.0"
+  }
+}
